@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7fdf04b-c0e5-4e71-acdf-e449e9ccbe36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/lab3.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.2/lab3.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/lab3.2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1.3/Main1.3" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/lab1.3/Main1.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2.2/ProgramMatrix/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2.2/ProgramMatrix/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2N9B1Tf4mmobBGID9rF8Ni2vBrT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/sonar/IdeaProjects/lab2/lab2.1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7fdf04b-c0e5-4e71-acdf-e449e9ccbe36" name="Changes" comment="" />
+      <created>1679066202884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679066202884</updated>
+    </task>
+    <servers />
+  </component>
+</project>

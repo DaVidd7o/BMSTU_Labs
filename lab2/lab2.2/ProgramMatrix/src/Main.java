@@ -67,12 +67,26 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int[][] a = {{12, 2, 3}, {43, 5, 6}, {73, 8, 9}};
+        int num = 0;
+        while (true) {
+            System.out.print("Input a total positive number n>0 of matrix: ");
+            num = in.nextInt();
+            if (num > 0) {
+                break;
+            }
+        }
+        int a[][] = new int[num][num];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
+                a[i][j] = ((int)(Math.random() * num*2) - num);
+            }
+        }
         System.out.println("Original matrix:");
         Matrix(a);
         rotateMatrix90(a);
         rotateMatrix180(a);
         rotateMatrix270(a);
+        System.out.print("Matrix determinant: ");
         System.out.println(det(a));
 
     }
