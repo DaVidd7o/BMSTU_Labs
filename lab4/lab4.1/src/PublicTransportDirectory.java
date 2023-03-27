@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
-public class PublicTransportDirectory {
+class PublicTransportDirectory {
     // Main class for storing directory of public transport
-    private ArrayList<TransportInfo> directory;
+    ArrayList<TransportInfo> directory;
+     TransportInfo transportInfo;
 
     // Constructor for creating new directory
     public PublicTransportDirectory() {
@@ -10,8 +11,8 @@ public class PublicTransportDirectory {
     }
 
     // Add new transport information to directory
-    public void addTransportInfo(String time, String route, double fare) {
-        TransportInfo transportInfo = new TransportInfo(time, route, fare);
+    public void addTransportInfo(String time, String route, double price) {
+        transportInfo = new TransportInfo(time, route, price);
         directory.add(transportInfo);
     }
 
@@ -24,16 +25,15 @@ public class PublicTransportDirectory {
     public int getSize() {
         return directory.size();
     }
-    // Inner class for storing information about time, routes and fare
-    private class TransportInfo {
-        private String time;
-        private String route;
-        private double fare;
+    // Inner class for storing information about time, routes and price
+    public class TransportInfo {
+        private String time,route;
+        private double price;
 
-        public TransportInfo(String time, String route, double fare) {
+        public TransportInfo(String time, String route, double price) {
             this.time = time;
             this.route = route;
-            this.fare = fare;
+            this.price = price;
         }
 
         public String getTime() {
@@ -44,8 +44,8 @@ public class PublicTransportDirectory {
             return route;
         }
 
-        public double getFare() {
-            return fare;
+        public double getprice() {
+            return price;
         }
     }
 }
