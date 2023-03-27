@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Customer {
-    private ArrayList<Customer> list_result = new ArrayList<>();
     String FName,LName;
     int account, number, phoneConversations;
     boolean on;
@@ -26,24 +25,23 @@ public class Customer {
     public void AddServices(ArrayList<Service> list) {
         ArrayList<Service> ServicesCust = new ArrayList<Service>();
         ServicesCust = list;
-        for (Service client : list){
-            TheFinalPrice = TheFinalPrice + client.price;
+        for (Service serv : list){
+            TheFinalPrice = TheFinalPrice + serv.price;
         }
-
-    }
-    public void Add(Customer client) {
-        list_result.add(client);
 
     }
 
     public void PayTheBill() {
         if (this.account > TheFinalPrice) {
+            this.account = this.account-TheFinalPrice;
             System.out.printf("Счет оплачен, уважаемый ",this.FName);
+            System.out.println("Текущий счет:");
+            System.out.println(this.account);
         }
         else {
             System.out.printf("Не хватет средств",this.FName);
-            Admin ad = new Admin();
-            ad.NonPayment(this.account,list_result);
+            Admin AD = new Admin();
+            AD.NonPayment(this.account);
 
 
         }

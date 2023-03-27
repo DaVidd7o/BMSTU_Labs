@@ -5,46 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19d9ab8-f34b-4340-9537-32ac870215ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab2.1/lab2.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/lab3.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.1/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.2/lab3.2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.6/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.6/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/src/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/src/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.7/src/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.8/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3.8/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab1/lab1.3/Main1.3" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/lab1.3/Main1.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab2/lab2.2/ProgramMatrix/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/lab2.2/ProgramMatrix/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.3/lab3.3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab3.4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.5/lab3.5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.6/lab3.6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.7/lab3.7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.8/lab3.8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.8/src/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.8/src/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.8/src/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3.8/src/Trip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/lab4.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/lab4.1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.7/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.7/src/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.7/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.7/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.7/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.7/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3.8/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3.8/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
