@@ -41,7 +41,7 @@ public class Customer {
         else {
             System.out.printf("Не хватет средств",this.FName);
             Admin AD = new Admin();
-            AD.NonPayment(this.account);
+            AD.NonPayment(this.number);
 
 
         }

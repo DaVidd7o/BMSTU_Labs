@@ -13,7 +13,7 @@ public class Admin {
     }
     public void NonPayment(int a){
         for (Customer client : list_result){
-            if (client.account == a){
+            if (client.number == a){
                 client.on = false;
                 client.time = 1440;
             }

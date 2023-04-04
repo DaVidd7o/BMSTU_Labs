@@ -12,6 +12,14 @@ public class Operator {
     }
 
     public void DistributeRequests(ArrayList<Driver> list_drivers,ArrayList<Auto> list_cars,ArrayList<Trip> list_trips) {
+//        var f = list_trips.stream().filter(trip -> !trip.pending);
+//        var f2 = list_drivers.stream().filter(driver -> driver.active && driver.carID == 0 && driver.free);
+//        f.forEach( trip -> {
+//            f2.forEach(driver -> {
+//                var filtered_cars = list_cars.stream().filter(car -> car.ready && trip.carID == 0);
+//                filtered_cars.forEach();
+//            });
+//        });
         for (Trip trip: list_trips) {
             System.out.printf("The TRIP from %s to %s \n",trip.departure,trip.destination);
             if (!trip.pending) {

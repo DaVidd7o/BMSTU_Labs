@@ -7,14 +7,19 @@ import java.util.Scanner;
 //  путем добавления следующего за ним элемента массива.
 public class Main {
     public static void main(String[] args) {
-        Fraction tom = new Fraction(1,4); // вызов второго конструктора с одним параметром
-        Fraction andy = new Fraction(2,6);
-        tom.sum(tom,andy);
-        tom.sub(tom,andy);
-        tom.mul(tom,andy);
-        tom.div(tom,andy);
-
         Scanner in = new Scanner(System.in);
+        int nums[] = new int[4];
+        System.out.println("Input one at the time int numbers: ");
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = in.nextInt();
+        }
+        Fraction frac1 = new Fraction(nums[0],nums[1]); // вызов второго конструктора с одним параметром
+        Fraction frac2 = new Fraction(nums[2],nums[3]);
+        frac1.sum(frac1,frac2);
+        frac1.sub(frac1,frac2);
+        frac1.mul(frac1,frac2);
+        frac1.div(frac1,frac2);
+
         int num = 0;
         while (true) {
             System.out.print("Input a number of Fractions for array: ");
@@ -23,17 +28,17 @@ public class Main {
                 break;
             }
         }
-        int nums[] = new int[num*2];
+        int nums1[] = new int[num*2];
         System.out.println("Input one at the time int numbers: ");
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = in.nextInt();
+        for (int i = 0; i < nums1.length; i++) {
+            nums1[i] = in.nextInt();
         }
         Fraction[] arr = new Fraction[num];
         int k=0;
         System.out.println("The input array of fractions:");
-        for (int i=0;i<nums.length-1;i+=2) {
-            int numerator = nums[i];
-            int determinator = nums[i+1];
+        for (int i=0;i<nums1.length-1;i+=2) {
+            int numerator = nums1[i];
+            int determinator = nums1[i+1];
             arr[k] = new Fraction(numerator,determinator);
             System.out.println(arr[k].m);
             System.out.println(arr[k].n);
@@ -41,110 +46,13 @@ public class Main {
             k++;
 
         }
-        Fraction alex = new Fraction();
-        alex.edit(arr);
+        Fraction frac3 = new Fraction();
+        frac3.edit(arr);
         System.out.println("The edit array of fractions:");
         for (int i=0;i<arr.length;i++){
             System.out.println(arr[i].m);
             System.out.println(arr[i].n);
             System.out.println("---");
         }
-    }
-}
-
-class Fraction{  // имя
-
-    int m,n; // числитель и знаменатель
-    public Fraction() {}
-
-    public Fraction(int m, int n) {
-        this.m = m;
-        this.n = n;
-    }
-
-    private static int gcd(int a, int b) // Greatest Common Divisor
-    {
-        while (b > 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
-    }
-
-    private static int gcd(int[] input) { // Greatest Common Divisor
-        int result = input[0];
-        for (int i = 1; i < input.length; i++)
-            result = gcd(result, input[i]);
-        return result;
-    }
-    private static int lcm(int a,int b){
-        return a / gcd(a,b) * b;
-    }
-    private static int lcm(int[] input) {
-        int result = input[0];
-        for (int i = 1; i < input.length; i++) {
-            if ((input[i] == 0 || input[0] == 0)
-                    || (input[i] < 0 || input[0] < 0))
-                break;
-            result = lcm(result, input[i]);
-        }
-        return result;
-    }
-
-    void displayInfo(Fraction res,String operation){
-        System.out.println(res.m);
-        System.out.print(res.n);
-        System.out.println(operation);
-    }
-
-    public Fraction sum(Fraction first, Fraction second){
-        Fraction result = new Fraction();
-        if (first.n==second.n) {
-            result.m = first.m + second.m;
-            result.n = first.n;
-        }
-        else {
-            int LCM = lcm(first.n,second.n);
-            result.m =first.m*(LCM/ first.n)+second.m*(LCM / second.n);
-            result.n = LCM;
-            }
-        displayInfo(result," Sum");
-        return result;
-    }
-    public void edit(Fraction[] array_for_edit){
-        for (int i=0;i<array_for_edit.length-1;i++) {
-            if (i % 2 == 0) {
-                array_for_edit[i] = sum(array_for_edit[i],array_for_edit[i+1]);
-            }
-        }
-        //displayInfo(result," Sum");
-    }
-    public void sub(Fraction first, Fraction second){
-        Fraction result = new Fraction();
-        if (first.n==second.n) {
-            result.m = first.m - second.m;
-            result.n = first.n;
-        }
-        else {
-            int LCM = lcm(first.n,second.n);
-            result.m =first.m*(LCM/ first.n)-second.m*(LCM / second.n);
-            result.n = LCM;
-        }
-        displayInfo(result," Sub");
-    }
-
-    public void mul(Fraction first, Fraction second){
-        Fraction result = new Fraction();
-        result.n= first.n* second.n;
-        result.m= first.m* second.m;
-        displayInfo(result," Mul/Div");
-    }
-    public void div(Fraction first, Fraction second){
-        Fraction doubler = new Fraction();
-        doubler.m = second.n;
-        doubler.n = second.m;
-        mul(first,doubler);
-
     }
 }

@@ -7,12 +7,12 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        File file = new File("Pushkin.txt");
-        File file2 = new File("Result.txt");
+        var file = new File("Pushkin.txt");
+        var file2 = new File("Result.txt");
 
-        FileReader fr = new FileReader(file);
-        BufferedReader reader = new BufferedReader(fr);
-        FileWriter fw = new FileWriter("Result.txt");
+        var fr = new FileReader(file);
+        var reader = new BufferedReader(fr);
+        var fw = new FileWriter("Result.txt");
         Map<String, Integer> uniqueWords = new HashMap<String, Integer>();
         Map<Character, Integer> uniqueLetters = new HashMap<Character, Integer>();
 

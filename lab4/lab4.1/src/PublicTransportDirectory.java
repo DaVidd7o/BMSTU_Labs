@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-
 class PublicTransportDirectory {
     // Main class for storing directory of public transport
     ArrayList<TransportInfo> directory;
-     TransportInfo transportInfo;
+    TransportInfo transportInfo;
 
     // Constructor for creating new directory
     public PublicTransportDirectory() {

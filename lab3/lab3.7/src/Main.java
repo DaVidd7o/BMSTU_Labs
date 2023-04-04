@@ -21,8 +21,8 @@ public class Main {
         ArrayList<Service> ServicesForClient2 = new ArrayList<Service>();
         ServicesForClient2.add(new Service("Inet", 500));
         ServicesForClient2.add(new Service("Phone", 170));
-        Customer Andy = new Customer("Grigoryan","David",100,
-                919964,567,true,0);
+        Customer Andy = new Customer("Ivanov","Alex",100,
+                991264,127,true,0);
         Andy.AddServices(ServicesForClient2);
         List2.add(Andy);
         Andy.GetAdmin(ADMIN,ServicesForClient2);
