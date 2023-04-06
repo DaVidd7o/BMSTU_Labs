@@ -7,25 +7,60 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        var file = new File("text4.txt");
-        var fr = new FileReader(file);
-        var reader = new BufferedReader(fr);
+        var file = new File("Coder.txt");
+        var reader = new BufferedReader(new FileReader(file));
 
-        ArrayList<String> list = new ArrayList<>();
         String line = reader.readLine();
+        String Final1="";
         while (line != null) {
-            for (String element: line.split("\\s")) {
-                list.add(element);
-            }
+            Final1 = Final1.concat(line);
+           // Final1 = Final1.concat(" ");
             line = reader.readLine();
         }
-        int price = 12;
-        System.out.println("The price of one word is 12 dollars");
-        System.out.print("The final price of your telegram is: ");
-        System.out.println(PriceTelegram(list,price));
+        int dif = coding(Final1);
+        System.out.println("The coding process is ended!");
+        reader.close();
+        decoding(dif);
+        System.out.print("The decoding process is ended!");
     }
-    public static int PriceTelegram(ArrayList listofwords,int cost) {
-        int price = listofwords.size()*cost;
-        return price;
+    public static int coding(String listoflines) throws IOException{
+        var file2 = new File("Result.txt");
+        var bf = new BufferedWriter(new FileWriter(file2));
+        var array = listoflines.toCharArray();
+        int l=0;
+        for (int i=0;i<3;i++) {
+            for (int k=0;k<array.length;k+=3) {
+                bf.write(array[k]);
+                bf.flush();
+                l++;
+
+            }
+            System.out.println(l);
+            array = Arrays.copyOfRange(array, 1, array.length);
+        }
+        bf.close();
+        return l/3;
+    }
+    public static void decoding(int step) throws IOException{
+        var file = new File("Result.txt");
+        var reader = new BufferedReader(new FileReader(file));
+
+        var file2 = new File("decoder.txt");
+        var bf = new BufferedWriter(new FileWriter(file2));
+
+        String line = reader.readLine();
+        var array1 = line.toCharArray();
+        for (int k=0;k<step;k++) {
+            for (int i=0;i<3;i++) {
+                if (step*i+k>= array1.length) {
+                    break;
+                }
+                bf.write(array1[step*i+k]);
+                bf.flush();
+            }
+        }
+        bf.close();
+        reader.close();
+        return;
     }
 }
